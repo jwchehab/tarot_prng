@@ -12,3 +12,5 @@ How to receive data from the microservice:
    Example call: with open("needed_nums.txt", 'r') as file:
                      result = file.read().strip()
 
+![A UML sequence diagram showing requesting and receiving data from the 
+Tarot PRNG Microservice](UML_Sequence_Diagram.png "Microservice UML Diagram")
