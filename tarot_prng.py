@@ -18,23 +18,9 @@ def reading(deck, cards_in_reading):
         for card in drawn_cards
     ]
 
-    # Dramatization for the video
-    print("Microservice has generated:")
-    time.sleep(1.5)
-    print(tarot_draw)
-    time.sleep(1.5)
     return tarot_draw
 
-
 tarot_reading = reading(tarot_deck, draws)
-
-# Dramatization for the video
-print("Writing", end="")
-time.sleep(0.75)
-for i in range(3):
-    print(".", end="")
-    time.sleep(0.75)
-time.sleep(1.25)
 
 # Write output as list of CSV to text file
 with open('needed_nums.txt', 'w') as file:
